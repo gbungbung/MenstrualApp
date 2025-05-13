@@ -113,7 +113,7 @@ class Init_3Screen(Screen):
                     # Logic to move to range page
                     Init_4Screen.last_date = last_date
                     print(last_date)
-                    self.parent.set_current('init_4screen')
+                    #self.parent.set_current('init_4screen')
                     print(last_date)
             except:
                 ldt.helper_text = 'Wrong format'
