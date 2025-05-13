@@ -1,0 +1,62 @@
+<Init_2Screen>
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: dp(20), dp(20),dp(20), dp(40)
+        RelativeLayout:
+            size_hint:  None, 1
+            width: root.width if root.width < 600 else 600
+            height: root.height
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            MDBoxLayout:
+                padding: dp(40), dp(10),dp(40), dp(0)
+                orientation: 'vertical'
+                spacing: dp(10)
+                MDBoxLayout:
+                    orientation: 'vertical'
+                    padding: dp(40), dp(0),dp(40), dp(0)
+                    size_hint_y: None
+                    height: dp(48)
+                    MDProgressBar:
+                        size_hint_y: None
+                        height: dp(2)
+                        value: 20
+                        orientation: 'horizontal'
+                        color: app.main_color
+                    MDLabel:
+                        text: '1/5'
+                        halign: 'center'
+                MDBoxLayout:
+                    # The layout to cover/balance the space so textfield to be center
+                MDLabel:
+                    size_hint_y: None
+                    height: dp(20)
+                    text: 'Are you pregnant?'
+                    halign: 'center'
+                MDBoxLayout:
+                    size_hint_y: None
+                    height: dp(30)
+                    MDBoxLayout:
+                    MDFlatButton:
+                        text: 'No'
+                        pos_hint: {"center_y": .5, "center_x":.5}
+                        on_release: root.save_preg_state('No')
+                        canvas.before:
+                            Color:
+                                rgba: app.main_color
+                            Line:
+                                width: 1
+                                rectangle: self.x, self.y, self.width, self.height
+                    MDBoxLayout:
+                    MDFlatButton:
+                        text: 'Yes'
+                        pos_hint: {"center_y": .5, "center_x":.5}
+                        on_release: root.save_preg_state('Yes')
+                        canvas.before:
+                            Color:
+                                rgba: app.main_color
+                            Line:
+                                width: 1
+                                rectangle: self.x, self.y, self.width, self.height
+                    MDBoxLayout:
+                MDBoxLayout:
+                    # The layout to cover/balance the space so textfield to be center

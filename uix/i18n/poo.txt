@@ -1,0 +1,14 @@
+generate new .pot
+python "C:\Users\gbungbung\AppData\Local\Programs\Python\Python37\Tools\i18n\pygettext.py" -o D:\Code\Projs\Sw-translation\uix\i18n\po\messages.pot D:\Code\Projs\Sw-translation\uix\kv\home.kv
+
+Merging new pot with avaialable po
+python msgmerge --update --no-fuzzy-matching --backup=off D:\Code\Projs\Si\Windows\Windows\ui\si\i18n\po\en.po D:\Code\Projs\Si\Windows\Windows\ui\si\i18n\po\messages.pot
+python msgmerge --update --no-fuzzy-matching --backup=off D:\Code\Projs\Si\Windows\Windows\ui\si\i18n\po\Swahili.po D:\Code\Projs\Si\Windows\Windows\ui\si\i18n\po\messages.pot
+
+Creating new po
+cp  D:\Code\Projs\Sw-en-italiano\uix\i18n\po\messages.pot  D:\Code\Projs\Sw-translation\uix\i18n\po\en.po
+cp  D:\Code\Projs\Sw-en-italiano\uix\i18n\po\messages.pot  D:\Code\Projs\Sw-translation\uix\i18n\po\Swahili.po
+
+Generating mo
+python "C:\Users\gbungbung\AppData\Local\Programs\Python\Python37\Tools\i18n\msgfmt.py" -o uix\i18n\en\LC_MESSAGES\langapp.mo uix\i18n\po\en.po
+python "C:\Users\gbungbung\AppData\Local\Programs\Python\Python37\Tools\i18n\msgfmt.py" -o uix\i18n\Swahili\LC_MESSAGES\langapp.mo uix\i18n\po\Swahili.po

@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-11-05 20:56+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=cp1252\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: \uix\kv\home.kv:119
+msgid "[size=13sp]version 1.0.0[/size]"
+msgstr ""
+
+#: \uix\kv\home.kv:137
+msgid "Mother tongue"
+msgstr ""
+
+#: \uix\kv\home.kv:156
+msgid "Learning language"
+msgstr ""
+
+#: \uix\kv\home.kv:175
+msgid "Themes"
+msgstr ""
+
+#: \uix\kv\home.kv:270
+msgid "Description"
+msgstr ""
+
+#: \uix\kv\home.kv:373
+msgid "Greetings"
+msgstr ""
+
+#: \uix\kv\home.kv:424
+msgid "Animals"
+msgstr ""
+
+#: \uix\kv\home.kv:477
+msgid "Idioms"
+msgstr ""
+
+#: \uix\kv\home.kv:529
+msgid "Numbers"
+msgstr ""
+
+#: \uix\kv\home.kv:543
+msgid "Proverbs"
+msgstr ""
+
+#: \uix\kv\home.kv:556
+msgid "Miscellanous"
+msgstr ""
+
