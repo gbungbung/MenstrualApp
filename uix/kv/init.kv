@@ -1,0 +1,26 @@
+<InitScreen>
+    MDBoxLayout:
+        orientation: 'vertical'
+        id: homee
+        spacing: dp(10)
+        padding: [dp(20), dp(10),dp(20), dp(70)] if root.width <= root.height else [dp(20), dp(60),dp(20), dp(10)]
+        MDBoxLayout:
+            orientation: 'vertical'
+            RelativeLayout:
+                size_hint:  None, 1
+                width: root.width if root.width < 600 else 600
+                height: root.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout:
+                    padding: dp(20), dp(40),dp(20), dp(40)
+                    orientation: 'vertical'
+                    spacing: dp(20)
+                    MDBoxLayout:
+                    Image:
+                        source: './uix/assets/img/user.png'
+                    MDBoxLayout:
+                    MDLabel:
+                        size_hint_y: None
+                        height: dp(80)
+                        text: root.txt
+                        halign: 'center'

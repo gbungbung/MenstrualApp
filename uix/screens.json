@@ -1,0 +1,27 @@
+{
+    "initscreen": {
+        "import": "from uix.baseclass.home_screen import InitScreen",
+        "object": "InitScreen()",
+        "kv": "uix/kv/init.kv"
+    },
+    "init_2screen": {
+        "import": "from uix.baseclass.home_screen import Init_2Screen",
+        "object": "Init_2Screen()",
+        "kv": "uix/kv/init_2.kv"
+    },
+    "init_3screen": {
+        "import": "from uix.baseclass.home_screen import Init_3Screen",
+        "object": "Init_3Screen()",
+        "kv": "uix/kv/init_3.kv"
+    },
+    "init_4screen": {
+        "import": "from uix.baseclass.home_screen import Init_4Screen",
+        "object": "Init_4Screen()",
+        "kv": "uix/kv/init_4.kv"
+    },
+    "allscreen": {
+        "import": "from uix.baseclass.home_screen import AllScreen",
+        "object": "AllScreen()",
+        "kv": "uix/kv/home.kv"
+    }
+}

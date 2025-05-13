@@ -1,0 +1,972 @@
+
+<AllScreen>
+    FloatLayout:
+        ScreenManager:
+            pos_hint: {'x': 0, 'y': 0} if root.width <= root.height else {'x': 0, 'y': 0}
+            id: scrns_
+            Home:
+                id: home_
+                name: "home_"
+            Setups:
+                id: setup_
+                name: "setup_"
+            NotificationScreen:
+                id: notification_
+                name: "notification_"
+                
+            MenstrualDtScreen0:
+                id: menstrual_0
+                name: "menstrual_0"
+            MenstrualDtScreen:
+                id: menstrual_
+                name: "menstrual_"
+            UserDataScreen:
+                id: user_data_
+                name: "user_data_"
+            ExtraScreen:
+                id: extra_data_
+                name: "extra_data_"
+        MDCard:
+            size_hint_y: None
+            height: dp(60) if root.width <= root.height else dp(50)
+            elevation: .3
+            radius: 0,0
+            pos_hint: {'x': 0, 'top': 1} if root.width > root.height else {'x': 0, 'y': 0}
+            MDBoxLayout:
+            MDIconButton:
+                icon: 'grid'
+                icon_size: sp(20)
+                halign: 'center'
+                #size_hint_x: None
+                #width: dp(48) if root.width <= dp(600) else dp(0)
+                #opacity: 1 if root.width <= dp(600) else 0
+                pos_hint: {"center_y": .5, "center_x":.5}
+                on_release: root.change_screen('notification_')
+            MDIconButton:
+                icon: 'home'
+                icon_size: sp(35)
+                halign: 'center'
+                #size_hint_x: None
+                #width: dp(48) if root.width <= dp(600) else dp(0)
+                #opacity: 1 if root.width <= dp(600) else 0
+                pos_hint: {"center_y": .5, "center_x":.5}
+                on_release: root.change_screen('home')
+            MDIconButton:
+                icon: 'cogs'
+                icon_color: 1,1,1,1
+                icon_size: sp(20)
+                halign: 'center'
+                pos_hint: {"center_y": .5, "center_x":.5}
+                on_release: root.change_screen('account')
+            MDBoxLayout:
+                #size_hint_x: None
+                #width: dp(self.width) if root.width <= dp(600) else dp(0)
+
+<Home>
+    MDBoxLayout:
+        orientation: 'vertical'
+        id: homee
+        spacing: dp(10)
+        padding: [dp(20), dp(10),dp(20), dp(70)] if root.width <= root.height else [dp(20), dp(60),dp(20), dp(10)]
+        MDBoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            height: dp(130)
+            RelativeLayout:
+                size_hint:  None, 1
+                width: root.width if root.width < 600 else 600
+                height: root.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout:
+                    padding: dp(20), dp(0),dp(20), dp(0)
+                    
+                    MDCard:
+                        size_hint_x: None
+                        width:dp(130)
+                        elevation: 0
+                        border_radius: dp(20)
+                        radius: dp(15)
+                        md_bg_color: app.main_color
+                        padding: dp(2), dp(2), dp(2), dp(2)
+                        MDCard:
+                            border_radius: dp(20)
+                            radius: dp(15)
+                            MDLabel:
+                                id: exact_days
+                                text: root.exact_days
+                                valign: 'center'
+                                halign: 'center'
+                                bold: True
+                                font_size: sp(40)
+                                markup:True
+                    MDCard:
+                        size_hint_y: None
+                        width:dp(100)
+                        elevation: 0
+                        radius: 0, 5, 5, 0
+                        pos_hint: {'center_x': .5, 'center_y': .5}
+                        MDLabel:
+                            text: root.on_count_day
+                            padding: dp(20), dp(10), dp(10), dp(10)
+                            halign: 'left'
+                            valign: 'top'
+                            font_size: sp(14)
+                            markup: True
+
+        #MDBoxLayout:
+        #    orientation: 'vertical'
+        #    size_hint_y: None
+        #    height: dp(40)
+        #    RelativeLayout:
+        #        size_hint:  None, 1
+        #        width: root.width if root.width < 600 else 600
+        #        height: root.height
+        #        pos_hint: {'center_x': .5, 'center_y': .5}
+        #        MDBoxLayout:
+        #            padding: dp(20), dp(0),dp(20), dp(0)
+        #            MDCard:
+        #                elevation: 0
+        #                radius: 5
+        #                padding: dp(10),dp(20),dp(10),dp(20)
+        #                MDLabel:
+        #                    text: 'You are in Menstrual phase'
+        #                    valign: 'center'
+        #                    text_color: 1,0,1,1
+
+                               
+        MDBoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            height: dp(40)
+            RelativeLayout:
+                size_hint:  None, 1
+                width: root.width if root.width < 600 else 600
+                height: root.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout
+                    id: par
+                    padding: dp(20), dp(0),dp(20), dp(0)
+                    #MDBoxLayout:
+                    #GroupButton:
+                    #    id: yest
+                    #    text: 'Yesterday'
+                    #    group:'a1'
+                    #    line_color: 1,1,1,.6
+                    #    pos_hint: {"center_y": .5, "center_x":.5}
+                    #    padding: dp(20), dp(10)
+                    #    on_release: root.day_change(self.text); root.ids.tod.text_color = 1,1,1,1; root.ids.tom.text_color = 1,1,1,1; self.md_bg_color = app.main_color
+
+                    GroupButton:
+                        id: tod
+                        text: 'Today'
+                        group:'a1'
+                        size_hint_x: None
+                        width: par.width/2 - dp(20)
+                        pos_hint: {"center_y": .5, "center_x":.5}
+                        #padding: dp(60), dp(10)
+                        on_release: root.day_change(self.text); root.ids.tom.text_color = 1,1,1,1; self.md_bg_color = app.main_color
+
+                    GroupButton:
+                        id: tom
+                        text: 'Tomorrow'
+                        group:'a1'
+                        size_hint_x: None
+                        width: par.width/2 - dp(20)
+                        pos_hint: {"center_y": .5, "center_x":.5}
+                        #padding: dp(60), dp(10)
+                        on_release: root.day_change(self.text); root.ids.tod.text_color = 1,1,1,1; self.md_bg_color = app.main_color
+                    #MDBoxLayout:                        
+
+        MDBoxLayout:
+            orientation: 'vertical'
+            RelativeLayout:
+                size_hint:  None, 1
+                width: root.width if root.width < 600 else 600
+                height: root.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout:
+                    padding: dp(20), dp(0),dp(20), dp(0)
+                    MDCard:
+                        elevation: 0
+                        radius: 5
+                        padding: dp(20),dp(20),dp(20),dp(20)
+                        MDLabel:
+                            text: root.tip1
+                            halign: 'center'
+                            valign: 'center'
+                            markup: True
+                        #ScrollView:
+                        #    do_scroll_x: False
+                        #    do_scroll_y: True
+                        #    bar_width: 0
+                        #    MDLabel:
+                        #        text: root.tip
+                        #        halign: 'center'
+                        #        valign: 'center'
+                        #        size_hint_y: None
+                        #        height: self.texture_size[1]
+                        #        text_size: self.width, None
+        
+        MDBoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            height: self.minimum_height
+            RelativeLayout:
+                size_hint:  None, None
+                width: root.width if root.width < 600 else 600
+                height: inner_.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout:
+                    id: inner_
+                    padding: dp(20), dp(0),dp(20), dp(0)
+                    size_hint_y: None
+                    height: self.minimum_height
+                    MDCard:
+                        elevation: 0
+                        radius: 5
+                        padding: dp(10),dp(20),dp(10),dp(20)
+                        size_hint_y: None
+                        height: label.height+ dp(40)
+                        spacing: dp(5)
+                        MDCard:
+                            size_hint_x: None
+                            width:dp(5)
+                            elevation: 0
+                            border_radius: dp(20)
+                            radius: dp(5)
+                            md_bg_color: app.main_color
+                        MDLabel:
+                            id: label
+                            text: root.tip2
+                            halign: 'center'
+                            size_hint_y: None
+                            height: self.texture_size[1]
+                            pos_hint: {'center_x': .5, 'center_y': .5}
+                        MDCard:
+                            size_hint_x: None
+                            width:dp(5)
+                            elevation: 0
+                            border_radius: dp(20)
+                            radius: dp(5)
+                            md_bg_color: app.main_color
+
+<MenstrualDtScreen0>
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: [dp(20), dp(10),dp(20), dp(70)] if root.width <= root.height else [dp(20), dp(60),dp(20), dp(10)]
+        spacing: dp(10)
+        
+        MDBoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            height: dp(100)
+            RelativeLayout:
+                size_hint:  None, 1
+                width: root.width if root.width < 600 else 600
+                height: root.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout
+                    padding: ('20dp', '0dp', '20dp', '0dp')
+                    MDCard:
+                        size_hint_y: None
+                        height: dp(100)
+                        elevation: 0
+                        radius: 5
+                        padding: dp(10),dp(10),dp(10),dp(10)
+                        MDLabel:
+                            text: 'Enter your last menstrual period'
+                            bold: True
+                            halign: 'center'
+                            valign: 'top'
+                            font_size: sp(18)
+
+        MDBoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            height: dp(80)
+            RelativeLayout:
+                size_hint:  None, 1
+                width: root.width if root.width < 600 else 600
+                height: root.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout
+                    padding: ('20dp', '0dp', '20dp', '0dp')
+                    MDCard:
+                        orientation: 'vertical'
+                        elevation: 0
+                        radius: 5
+                        padding: dp(20),dp(0),dp(20),dp(10)
+                        MDBoxLayout:
+                            MDIconButton:
+                                icon: 'calendar'
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                on_release: root.show_date_picker('date_')
+                            MDTextField:
+                                id: date_
+                                on_text: root.check_date_()
+
+                                hint_text: 'Last menstrual date'
+                                multiline: False
+                                font_size: sp(12)
+                                mode: 'rectangle'
+                                radius: [5,5,5,5]
+                                helper_text_mode: 'persistent'
+                                
+                                #hint_text_color_normal: 1,0,.5,1
+                                hint_text_color_focus: 0,0,0,1
+                                line_color_focus: 0,0,0,1
+                                text_color_focus: 0,0,0,1
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                markup: True
+
+        MDBoxLayout:
+            size_hint_y: None
+            padding: dp(10),dp(0),dp(10),dp(0)
+            height: dp(60)
+            MDBoxLayout:
+
+            MDFlatButton:
+                id: save_update_btn
+                text: 'save'
+                pos_hint: {"center_y": .5, "center_x":.5}
+                on_release: root.save__() #root.ask_dialog(self.text)
+                canvas.before:
+                    Color:
+                        rgba: (1, 0, 1, .8)
+                    Line:
+                        width: 1
+                        rectangle: self.x, self.y, self.width, self.height
+            MDBoxLayout:
+        MDBoxLayout:
+
+<MenstrualDtScreen>
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: [dp(20), dp(10),dp(20), dp(70)] if root.width <= root.height else [dp(20), dp(60),dp(20), dp(10)]
+        spacing: dp(10)
+
+        MDBoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            height: dp(100)
+            RelativeLayout:
+                size_hint:  None, 1
+                width: root.width if root.width < 600 else 600
+                height: root.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout
+                    padding: ('20dp', '0dp', '20dp', '0dp')
+                    MDCard:
+                        size_hint_y: None
+                        height: dp(100)
+                        elevation: 0
+                        radius: 5
+                        padding: dp(10),dp(10),dp(10),dp(10)
+                        MDLabel:
+                            text: 'Enter your last four menstrual periods'
+                            bold: True
+                            halign: 'center'
+                            valign: 'top'
+                            font_size: sp(18)
+                
+        MDBoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            height: dp(370)
+            RelativeLayout:
+                size_hint:  None, 1
+                width: root.width if root.width < 600 else 600
+                height: root.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout
+                    padding: ('20dp', '0dp', '20dp', '0dp')
+                    MDCard:
+                        orientation: 'vertical'
+                        elevation: 0
+                        radius: 5
+                        padding: [dp(20),dp(10),dp(20),dp(5)] if root.width < 600 else  [dp(100),dp(10),dp(100),dp(5)]
+                        MDBoxLayout:
+                            MDIconButton:
+                                icon: 'calendar'
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                on_release: root.show_date_picker('date_4')
+                            MDTextField:
+                                id: date_1
+                                on_text_validate: date_2.focus = True
+                                on_text: root.check_date_errors()
+                                
+                                hint_text: 'Last month menstrual date'
+                                multiline: False
+                                font_size: sp(12)
+                                mode: 'rectangle'
+                                radius: [5,5,5,5]
+                                helper_text_mode: 'persistent'
+                                
+                                #hint_text_color_normal: 1,0,.5,1
+                                hint_text_color_focus: 0,0,0,1
+                                line_color_focus: 0,0,0,1
+                                text_color_focus: 0,0,0,1
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                markup: True
+                                
+                        MDBoxLayout:
+                            MDIconButton:
+                                icon: 'calendar'
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                on_release: root.show_date_picker('date_3')
+                            MDTextField:
+                                id: date_2
+                                on_text_validate: date_3.focus = True
+                                on_text: root.check_date_errors()
+                                
+                                hint_text: 'Last 2 month menstrual date'
+                                multiline: False
+                                font_size: sp(12)
+                                mode: 'rectangle'
+                                radius: [5,5,5,5]
+                                helper_text_mode: 'persistent'
+                                
+                                #hint_text_color_normal: 1,0,.5,1
+                                hint_text_color_focus: 0,0,0,1
+                                line_color_focus: 0,0,0,1
+                                text_color_focus: 0,0,0,1
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                markup: True
+                                
+                        MDBoxLayout:
+                            MDIconButton:
+                                icon: 'calendar'
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                on_release: root.show_date_picker('date_2')
+                            MDTextField:
+                                id: date_3
+                                on_text_validate: date_4.focus = True
+                                on_text: root.check_date_errors()
+                                
+                                hint_text: 'Last 3 month menstrual date'
+                                multiline: False
+                                font_size: sp(12)
+                                mode: 'rectangle'
+                                radius: [5,5,5,5]
+                                helper_text_mode: 'persistent'
+                                
+                                #hint_text_color_normal: 1,0,.5,1
+                                hint_text_color_focus: 0,0,0,1
+                                line_color_focus: 0,0,0,1
+                                text_color_focus: 0,0,0,1
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                markup: True
+                                
+                        MDBoxLayout:
+                            MDIconButton:
+                                icon: 'calendar'
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                on_release: root.show_date_picker('date_1')
+                            MDTextField:
+                                id: date_4
+                                on_text_validate: root.save_dt()
+                                on_text: root.check_date_errors()
+                                
+                                hint_text: 'Last 4 month menstrual date'
+                                multiline: False
+                                font_size: sp(12)
+                                mode: 'rectangle'
+                                radius: [5,5,5,5]
+                                helper_text_mode: 'persistent'
+                                
+                                #hint_text_color_normal: 1,0,.5,1
+                                hint_text_color_focus: 0,0,0,1
+                                line_color_focus: 0,0,0,1
+                                text_color_focus: 0,0,0,1
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                markup: True
+
+                        MDBoxLayout:
+                            padding: dp(10),dp(0),dp(10),dp(0)
+                            MDBoxLayout:
+
+                            MDFlatButton:
+                                id: save_update_btn
+                                text: 'save'
+                                md_bg_color: app.main_color
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                on_release: root.change_screen()
+                            MDBoxLayout:
+
+
+        MDBoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            height: dp(30)
+            RelativeLayout:
+                size_hint:  None, 1
+                width: root.width if root.width < 600 else 600
+                height: root.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout
+                    padding: dp(20), dp(10), dp(20), dp(10)
+                    MDLabel:
+                        text: 'NB: If you cant remember all four dates fill one or more date you remember and hit calculate'
+                        halign: 'left'
+                        pos_hint: {"center_y": .5, "center_x":.5}
+                        font_size: sp(10)
+                    MDFlatButton:
+                        text: 'calculate'
+                        pos_hint: {"center_y": .5, "center_x":.5}
+                        on_release: root.calc_dates()
+                        canvas.before:
+                            Color:
+                                rgba: (1, 0, 1, .8)
+                            Line:
+                                width: 1
+                                rectangle: self.x, self.y, self.width, self.height
+        MDBoxLayout:
+
+<Setups>
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: [dp(20), dp(10),dp(20), dp(70)] if root.width <= root.height else [dp(20), dp(60),dp(20), dp(10)]
+        
+        RelativeLayout:
+            size_hint:  None, 1
+            width: root.width if root.width < 600 else 600
+            height: root.height
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            size_hint_y: None
+            height: dp(50)
+            padding: 20,0,20,0
+    
+            MDBoxLayout:
+                padding: 20,0,20,0
+                MDCard:
+                    size_hint_y: None
+                    height: dp(50)
+                    elevation: 0
+                    radius: 5
+                    spacing: dp(20)
+                    md_bg_color: app.main_color
+                    padding: dp(20), dp(10), dp(20), dp(10)
+                    MDLabel:
+                        text: 'Settings'
+                        bold: True
+                        pos_hint: {'center_y': .5, 'center_x': .5}
+                        halign: 'left'
+                        font_size: sp(18)
+                    MDIconButton:
+                        icon: 'account-edit-outline'
+                        pos_hint: {'center_x': .5, 'center_y': .5}
+                        on_release: root.change_screen()
+
+        MDBoxLayout:
+            orientation: 'vertical'
+            padding: dp(20), dp(0), dp(20), dp(10)
+            spacing: dp(10)
+            RelativeLayout:
+                size_hint:  None, 1
+                width: root.width if root.width < 600 else 600
+                height: root.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                size_hint_y: None
+                height: dp(110)
+                MDBoxLayout:
+                    orientation: 'vertical'
+                    padding: dp(20), 0, dp(20), 0
+                    MDCard:
+                        size_hint_y: None
+                        height: dp(100)
+                        elevation: 0
+                        radius: 5
+                        spacing: dp(20)
+                        padding: dp(20), dp(10), dp(20), dp(10)
+                        FitImage:
+                            size_hint_x: None
+                            width: dp(80)
+                            source: root.avatar
+                            background_normal: ''
+                            background_color: 0,0,0,.5
+                            radius: [36, 36, 0, 0, ]
+                        MDBoxLayout:
+                            orientation: 'vertical'
+                            padding: dp(10), dp(10), dp(0), dp(10)
+                            MDBoxLayout:
+                                MDLabel:
+                                    text: root.user_
+                                    bold: True
+                            MDBoxLayout:
+                                MDLabel:
+                                    text: '[i][b]Age:[/b] {}\n[b]Medical issue:[/b] {}[/b]'.format(root.age, root.m_issue)
+                                    markup: True
+                                    font_size: sp(11)
+            RelativeLayout:
+                size_hint:  None, None
+                width: root.width if root.width < 600 else 600
+                height: dp(80)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout:
+                    orientation: 'vertical'
+                    padding: dp(20), 0, dp(20), 0
+                    MDCard:
+                        orientation: 'vertical'
+                        elevation: 0
+                        radius: 5
+                        size_hint_y: None
+                        height: dp(80)
+                        pos_hint: {'center_x': .5, 'center_y': .5}
+                        FlButton:
+                            id: last_p
+                            text: 'Last period' if root.last_period=='' else f'Last period      [size=12sp][i]({root.last_period})[/i][/size]'
+                            markup: True
+                            halign: 'left'
+                            padding: dp(20), 0, 0, 0
+                            font_size: sp(14)
+                            on_press: self.md_bg_color = 0,0,0,.05
+                            on_release:self.md_bg_color = (1,1,1,1) if app.theme_cls.theme_style == 'Light' else self.md_bg_color; root.modify_last_menstrual()
+                        MDSeparator:
+                        FlButton:
+                            id: next_p
+                            text: 'Next period' if root.next_period=='' else f'Next period      [size=12sp][i]({root.next_period})[/i][/size]'
+                            markup: True
+                            halign: 'left'
+                            padding: dp(20), 0, 0, 0
+                            font_size: sp(14)
+                            on_press: self.md_bg_color = 0,0,0,.05
+                            on_release:self.md_bg_color = (1,1,1,1) if app.theme_cls.theme_style == 'Light' else self.md_bg_color; root.next_period_dialog()
+
+            RelativeLayout:
+                size_hint:  None, None
+                width: root.width if root.width < 600 else 600
+                height: dp(150)
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout:
+                    orientation: 'vertical'
+                    padding: dp(20), 0, dp(20), 0
+                    MDCard:
+                        orientation: 'vertical'
+                        elevation: 0
+                        radius: 5
+                        size_hint_y: None
+                        height: dp(150)
+                        pos_hint: {'center_x': .5, 'center_y': .5}
+                        FlButton:
+                            id: theme_
+                            text: 'Themes'
+                            markup: True
+                            halign: 'left'
+                            padding: dp(20), 0, 0, 0
+                            font_size: sp(14)
+                            on_press: self.md_bg_color = 0,0,0,.05
+                            on_release:self.md_bg_color = (1,1,1,1) if app.theme_cls.theme_style == 'Light' else self.md_bg_color; root.theme_change()
+                        MDSeparator:
+                        FlButton:
+                            id: priv_p
+                            text: 'Privacy'
+                            halign: 'left'
+                            padding: dp(20), 0, 0, 0
+                            font_size: sp(14)
+                            on_press: self.md_bg_color = 0,0,0,.05
+                            on_release:self.md_bg_color = (1,1,1,1) if app.theme_cls.theme_style == 'Light' else self.md_bg_color; root.show_('privacy')
+                        MDSeparator:
+                        FlButton:
+                            id: term_
+                            text: 'Terms of use'
+                            halign: 'left'
+                            padding: dp(20), 0, 0, 0
+                            font_size: sp(14)
+                            on_press: self.md_bg_color = 0,0,0,.05
+                            on_release:self.md_bg_color = (1,1,1,1) if app.theme_cls.theme_style == 'Light' else self.md_bg_color; root.show_('terms')
+                        MDSeparator:
+                        FlButton:
+                            id: abt_
+                            text: 'About us'
+                            halign: 'left'
+                            padding: dp(20), 0, 0, 0
+                            font_size: sp(14)
+                            on_press: self.md_bg_color = 0,0,0,.05
+                            on_release:self.md_bg_color = (1,1,1,1) if app.theme_cls.theme_style == 'Light' else self.md_bg_color; root.show_('about')
+        
+            MDBoxLayout:
+            MDLabel:
+                size_hint_y: None
+                height: dp(20)
+                text: 'v 1.0.1'
+                halign: 'center'
+                font_size: sp(12)
+
+<UserDataScreen>
+    MDBoxLayout:
+        orientation: 'vertical'
+        spacing: dp(10)
+        padding: [dp(20), dp(10),dp(20), dp(70)] if root.width <= root.height else [dp(20), dp(60),dp(20), dp(10)]
+        MDBoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            height: dp(80)
+            RelativeLayout:
+                size_hint:  None, 1
+                width: root.width if root.width < 600 else 600
+                height: root.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout:
+                    orientation: 'vertical'
+                    padding: dp(20),dp(0),dp(20),dp(0)
+        
+                    MDCard:
+                        elevation: 0
+                        radius: 5
+                        MDLabel:
+                            text: 'EDIT YOUR INFOS'
+                            bold: True
+                            halign: 'center'
+                            valign: 'top'
+                            font_size: sp(18)
+        
+        MDBoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            height: dp(360)
+            RelativeLayout:
+                size_hint:  None, 1
+                width: root.width if root.width < 600 else 600
+                height: root.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                MDBoxLayout:
+                    orientation: 'vertical'
+                    padding: dp(20),dp(0),dp(20),dp(0)
+                    MDCard:
+                        orientation: 'vertical'
+                        elevation: 0
+                        radius: 5
+                        padding: dp(20),dp(10),dp(20),dp(10)
+                        MDBoxLayout:
+                            spacing: dp(10)
+                            MDTextField:
+                                id: f_name
+                                hint_text: 'First name'
+                                multiline: False
+                                font_size: sp(12)
+                                mode: 'rectangle'
+                                radius: [5,5,5,5]
+                                helper_text_mode: 'persistent'
+                                
+                                #hint_text_color_normal: 1,0,.5,1
+                                hint_text_color_focus: 0,0,0,1
+                                line_color_focus: 0,0,0,1
+                                text_color_focus: 0,0,0,1
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                markup: True
+                            MDTextField:
+                                id: l_name
+                                hint_text: 'Last name'
+                                multiline: False
+                                font_size: sp(12)
+                                mode: 'rectangle'
+                                radius: [5,5,5,5]
+                                helper_text_mode: 'persistent'
+                                
+                                #hint_text_color_normal: 1,0,.5,1
+                                hint_text_color_focus: 0,0,0,1
+                                line_color_focus: 0,0,0,1
+                                text_color_focus: 0,0,0,1
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                markup: True
+                        MDBoxLayout:
+                            MDTextField:    
+                                id: d_birth
+                                hint_text: 'Date of birth'
+                                multiline: False
+                                font_size: sp(12)
+                                mode: 'rectangle'
+                                radius: [5,5,5,5]
+                                helper_text_mode: 'persistent'
+                                
+                                #hint_text_color_normal: 1,0,.5,1
+                                hint_text_color_focus: 0,0,0,1
+                                line_color_focus: 0,0,0,1
+                                text_color_focus: 0,0,0,1
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                markup: True
+                            MDIconButton:
+                                icon: 'calendar'
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                on_release: root.show_date_picker()
+                        MDBoxLayout:
+                            spacing: dp(10)
+                            MDTextField:    
+                                id: loc
+                                hint_text: 'Location'
+                                multiline: False
+                                font_size: sp(12)
+                                mode: 'rectangle'
+                                radius: [5,5,5,5]
+                                helper_text_mode: 'persistent'
+                                
+                                #hint_text_color_normal: 1,0,.5,1
+                                hint_text_color_focus: 0,0,0,1
+                                line_color_focus: 0,0,0,1
+                                text_color_focus: 0,0,0,1
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                markup: True
+                            MDTextField:    
+                                id: b_group
+                                hint_text: 'Blood group'
+                                multiline: False
+                                font_size: sp(12)
+                                mode: 'rectangle'
+                                radius: [5,5,5,5]
+                                helper_text_mode: 'persistent'
+                                
+                                #hint_text_color_normal: 1,0,.5,1
+                                hint_text_color_focus: 0,0,0,1
+                                line_color_focus: 0,0,0,1
+                                text_color_focus: 0,0,0,1
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                markup: True
+                                readonly: True
+                                on_focus: if self.focus: root.drop_blood_menu()
+
+
+                        MDBoxLayout:
+                            spacing: dp(10)
+                            MDTextField:    
+                                id: height_
+                                hint_text: 'Height'
+                                multiline: False
+                                font_size: sp(12)
+                                mode: 'rectangle'
+                                radius: [5,5,5,5]
+                                helper_text_mode: 'persistent'
+                                input_filter: 'int'
+                                input_type: 'number'
+                                
+                                #hint_text_color_normal: 1,0,.5,1
+                                hint_text_color_focus: 0,0,0,1
+                                line_color_focus: 0,0,0,1
+                                text_color_focus: 0,0,0,1
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                markup: True
+                            MDTextField:    
+                                id: weight_
+                                hint_text: 'Weight'
+                                multiline: False
+                                font_size: sp(12)
+                                mode: 'rectangle'
+                                radius: [5,5,5,5]
+                                helper_text_mode: 'persistent'
+                                input_filter: 'int'
+                                input_type: 'number'
+                                
+                                #hint_text_color_normal: 1,0,.5,1
+                                hint_text_color_focus: 0,0,0,1
+                                line_color_focus: 0,0,0,1
+                                text_color_focus: 0,0,0,1
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                markup: True
+
+                        MDBoxLayout:
+                            MDTextField:   
+                                id: m_issue 
+                                hint_text: 'Medical issue'
+                                multiline: False
+                                font_size: sp(12)
+                                mode: 'rectangle'
+                                radius: [5,5,5,5]
+                                helper_text_mode: 'persistent'
+                                
+                                #hint_text_color_normal: 1,0,.5,1
+                                hint_text_color_focus: 0,0,0,1
+                                line_color_focus: 0,0,0,1
+                                text_color_focus: 0,0,0,1
+                                pos_hint: {"center_y": .5, "center_x":.5}
+                                markup: True
+        MDBoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            height: dp(50)
+            RelativeLayout:
+                pos_hint: {"center_y":.5, "center_x":.5}
+                MDFlatButton:
+                    text: 'save'
+                    pos_hint: {"center_y": .5, "center_x":.5}
+                    on_release: root.save_dt()
+                    canvas.before:
+                        Color:
+                            rgba: (1, 0, 1, .8)
+                        Line:
+                            width: 1
+                            rectangle: self.x, self.y, self.width, self.height
+        MDBoxLayout:
+
+<ExtraScreen>
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: [dp(20), dp(10),dp(20), dp(70)] if root.width <= root.height else [dp(20), dp(60),dp(20), dp(10)]
+        spacing: dp(10)
+        MDCard:
+            padding: ('15dp', '10dp', '15dp', '10dp')
+            size_hint_y: None
+            height: dp(50)
+            radius: 5
+            MDLabel:
+                text: root.head
+                halign: 'center'
+                bold: True
+        RelativeLayout:
+            size_hint:  None, 1
+            width: root.width if root.width < 600 else 600
+            height: root.height
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            MDBoxLayout:
+                orientation: 'vertical'
+                padding: ('20dp', '0dp', '20dp', '0dp')
+                MDCard:
+                    padding: ('15dp', '10dp', '15dp', '10dp')
+                    radius: 5
+                    ScrollView:
+                        do_scroll_x: False
+                        do_scroll_y: True
+                        bar_width: 0
+                        MDLabel:
+                            text: root.content
+                            halign: 'center'
+                            valign: 'middle'
+                            font_size: sp(12)
+                            size_hint_y: None
+                            height: self.texture_size[1]
+                            text_size: self.width, None
+                            markup:True
+
+<NotificationScreen>
+    MDBoxLayout:
+        orientation: 'vertical'
+        id: homee
+        spacing: dp(10)
+        padding: [dp(20), dp(10),dp(20), dp(70)] if root.width <= root.height else [dp(20), dp(60),dp(20), dp(10)]
+        MDBoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            height: dp(130)
+            RelativeLayout:
+                size_hint:  None, 1
+                width: root.width if root.width < 600 else 600
+                height: root.height
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                ScrollView:
+                    do_scroll_x: False
+                    do_scroll_y: True
+                    bar_width: 2
+                    MDBoxLayout:
+                        halign: 'center'
+                        valign: 'center'
+                        spacing: dp(10)
+                        orientation: 'vertical'
+                        MDCard:
+                        MDCard:
+                        MDCard:
+                        MDCard:
+
+<GroupButton@MDFlatButton>
+    elevation: 0
+    md_bg_color: app.main_color
+    on_press: self.text_color = [0,0,0,1] if self.state == 'down' else [1,1,1,1]; self.md_bg_color = [1,1,1,1] if self.state == 'down' else [1,0,1,.8]
+
+<FlButton>

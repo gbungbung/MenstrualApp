@@ -1,0 +1,317 @@
+{
+    "1": {
+        "Stage": "Menstrual phase (Bleeding)",
+        "Flow": "Light to moderate bleeding start",
+        "Symptoms": "Sharp cramps (often intense today), heavy fatigue, aching lower back, occasional headache",
+        "Mood": "Irritable or sensitive (Serotonin drop as oestrogen is low)",
+        "Possible": "Mild nausea",
+        "Explanation_short": "Your cycle is kicking off with light to moderate bleeding, and those sharp cramps might feel intense today. You are likely tired, with an aching lower back and maybe a headache. Low estrogen could make you feel irritable or sensitive, and mild nausea might pop up. This is your menstrual phase starting strong, so rest up, sip water, and try ibuprofen to ease discomfort while your body sets the stage for the cycle.",
+        "Tip": "You should take paracetamol or ibuprofen to ease cramps and headaches, you might consult a doctor if pain persists."
+    },
+    "2": {
+        "Stage": "Menstrual phase (Bleeding)",
+        "Flow": "Moderate to heavy bleeding",
+        "Symptoms": "Cramps (may peak), bloating, tender breasts, fatigue",
+        "Mood": "Irritable or low energy (hormone levels remain low)",
+        "Possible": "Clots in flow",
+        "Explanation_short": "Your bleeding is likely heavier today, with cramps hitting their peak, bloating, and tender breasts making things tough. You might feel irritable or low on energy, as hormones stay low, and clots could appear in your flow. This menstrual phase day can feel intense, but you have got this! Curl up with a heating pad, stay hydrated, and prioritize rest to help your body manage the discomfort and recharge for the days ahead.",
+        "Tip": "You should stay hydrated and use a heating pad for cramps, you might prioritize rest to feel better."
+    },
+    "3": {
+        "Stage": "Menstrual phase (Bleeding)",
+        "Flow": "Moderate to heavy bleeding",
+        "Symptoms": "Cramps (still noticeable), bloating, lower back pain",
+        "Mood": "Mood may stabilize slightly but still sensitive",
+        "Possible": "Increased appetite",
+        "Explanation_short": "Your flow is still moderate to heavy, with noticeable cramps, bloating, and lower back pain tagging along. Your mood might be stabilizing a bit, but you are still sensitive, and you could feel hungrier than usual. This menstrual phase day keeps things intense as your body works hard. Fuel up with iron-rich foods like spinach to fight fatigue, stay hydrated, and give yourself permission to rest while you navigate this challenging part of your cycle.",
+        "Tip": "You should eat iron-rich foods like spinach or lean meat, you might feel energized by including these."
+    },
+    "4": {
+        "Stage": "Menstrual phase (Bleeding)",
+        "Flow": "Light to moderate bleeding",
+        "Symptoms": "Mild cramps, reduced bloating, less fatigue",
+        "Mood": "Improving, less irritability",
+        "Possible": "Lingering discomfort",
+        "Explanation_short": "Your bleeding is lightening up to moderate, with milder cramps, less bloating, and fatigue starting to lift. You are likely feeling less irritable as your mood improves, though some discomfort might linger. This menstrual phase day feels like a turning point, as your body eases up. Try a gentle walk to boost your energy and keep things moving. You are almost through this phase, so pamper yourself a bit as you gear up for what is next.",
+        "Tip": "You might try gentle exercise like walking to ease symptoms, you should feel relief with movement."
+    },
+    "5": {
+        "Stage": "Menstrual phase (Bleeding)",
+        "Flow": "Light bleeding or spotting",
+        "Symptoms": "Minimal cramps, energy returning",
+        "Mood": "More stable, slight uplift",
+        "Possible": "End of bleeding for some",
+        "Explanation_short": "Your flow is down to light bleeding or spotting, with just minimal cramps as your energy starts bouncing back. You are feeling more stable, with a slight mood uplift, and for some, this might be the end of bleeding. This final menstrual phase day has your body winding down and prepping for the follicular phase. Switch to lighter pads or liners, and try some gentle stretches to keep your energy rising. You are almost there!",
+        "Tip": "You should maintain hygiene with lighter products, you might switch to liners as flow decreases."
+    },
+    "6": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "Energy increasing, skin may feel normal",
+        "Mood": "Optimistic (rising estrogen boosts serotonin)",
+        "Possible": "Slight cervical mucus changes",
+        "Explanation_short": "No more bleeding, you are in the follicular phase, and your energy is climbing! Your skin is feeling normal, and rising estrogen got you optimistic and upbeat, with slight cervical mucus changes starting. This is your body rebuilding after menstruation, setting a positive tone. Load up on nutrient-rich foods like veggies and lean proteins to fuel your glow. Hydration keeps you feeling great, so sip water and embrace this fresh start to your cycle with enthusiasm.",
+        "Tip": "You should focus on a nutrient-rich diet, you might notice better energy with balanced meals."
+    },
+    "7": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "Clearer skin, higher energy",
+        "Mood": "Positive and motivated",
+        "Possible": "Increased libido",
+        "Explanation_short": "Your cycle is in the follicular phase with no bleeding, and your skin is looking clearer as your energy soars. You are feeling positive and motivated, thanks to rising estrogen, and you might notice a spark in your libido. This vibrant day is perfect for diving into creative projects or catching up with friends. Fuel your body with balanced meals to keep that momentum going, and let your enthusiasm shine as you prep for ovulation.",
+        "Tip": "You might engage in creative or social activities, you should feel uplifted by connecting with others."
+    },
+    "8": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "Feeling strong, minimal discomfort",
+        "Mood": "Confident and focused",
+        "Possible": "Noticeable cervical mucus (thin, slippery)",
+        "Explanation_short": "No bleeding today you are rocking the follicular phase, feeling strong with barely any discomfort. Your confidence and focus are high as estrogen climbs, and you might notice thin, slippery cervical mucus hinting at fertility. This is your time to tackle workouts or big tasks! Eat nutrient-packed foods to support your energy, and stay hydrated to keep feeling amazing. Your body is building up for ovulation, so lean into this productive vibe.",
+        "Tip": "You should plan workouts or demanding tasks, you might leverage your energy for productivity."
+    },
+    "9": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "Peak energy, glowing skin",
+        "Mood": "Upbeat and sociable",
+        "Possible": "Mild pelvic sensations",
+        "Explanation_short": "Your follicular phase is in full swing with no bleeding, and your energy is at its peak, leaving your skin glowing. You are upbeat and sociable, thanks to estrogen boost, though mild pelvic sensations might pop up. This is your moment to shine at social events or active hobbies. Stay hydrated and get good sleep to keep your vibe high. Your body is prepping for ovulation, so enjoy this lively, radiant day!",
+        "Tip": "You should stay hydrated and prioritize sleep, you might feel vibrant with good rest."
+    },
+    "10": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "High stamina, clear thinking",
+        "Mood": "Alert and optimistic",
+        "Possible": "Increased cervical mucus",
+        "Explanation_short": "No bleeding today your follicular phase has you buzzing with high stamina and sharp thinking. You are alert and optimistic as estrogen surges, with increased cervical mucus signaling fertility is approach. This is your day to dive into new projects or brainstorm big ideas. Fuel up with nutrient-dense foods to keep your mind clear, and stay hydrated to support your energy. Your body is gearing up for ovulation, so make the most of this clarity!",
+        "Tip": "You might try new activities or tasks, you should capitalize on your mental clarity."
+    },
+    "11": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "Feeling vibrant, no major symptoms",
+        "Mood": "Happy and engaged",
+        "Possible": "Pre-ovulation cramping for some",
+        "Explanation_short": "You are thriving in the follicular phase with no bleeding, feeling vibrant and free of major symptoms. Your mood is happy and engaged as estrogen lifts you up, though some might feel pre-ovulation cramps. This is your time to connect with friends or track your cycle if you are planning. Load up on healthy foods to fuel your joy, and try light exercise to keep your energy soaring as ovulation nears.",
+        "Tip": "You should monitor your cycle if tracking fertility, you might use apps for accuracy."
+    },
+    "12": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "Slight pelvic discomfort possible",
+        "Mood": "Excited, high energy",
+        "Possible": "Mild ovulation cramping",
+        "Explanation_short": "No bleeding today—your follicular phase is buzzing with high energy and excitement from rising estrogen. You might feel slight pelvic discomfort or mild ovulation cramps as your body nears ovulation. This is your moment to stay active or plan something fun, but try mindfulness to keep balanced. Sip plenty of water to support your body, and track cycle changes if fertility is on your mind. You are almost at the fertile peak!",
+        "Tip": "You might practice mindfulness to stay balanced, you should feel centered with relaxation."
+    },
+    "13": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "Minimal symptoms, feeling strong",
+        "Mood": "Positive and focused",
+        "Possible": "Fertile cervical mucus starting",
+        "Explanation_short": "Your follicular phase is going strong with no bleeding, and you are feeling powerful with minimal symptoms. Your mood is positive and focused as estrogen climbs, and fertile cervical mucus might be starting, hinting at ovulation. This is your day to hit the gym or tackle tasks. Eat nutrient-rich foods to fuel your strength, and stay hydrated to keep up the momentum. Your body is prepping for the fertile window, so keep shining!",
+        "Tip": "You should stay active to support health, you might enjoy light exercise for energy."
+    },
+    "14": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "High energy, clear skin",
+        "Mood": "Optimistic and sociable",
+        "Possible": "Increased cervical mucus",
+        "Explanation_short": "No bleeding today, your follicular phase has you bursting with energy and clear, glowing skin. You are optimistic and sociable, thanks to rising estrogen, with increased cervical mucus signaling fertility is approach. This is your time to meet up with friends or dive into fun activities. Load up on nutrient-packed foods to keep your glow, and drink water to stay vibrant. Your body is prepping for ovulation, so embrace this lively, confident day!",
+        "Tip": "You should eat nutrient-dense foods, you might feel stronger with balanced nutrition."
+    },
+    "15": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "Feeling vibrant, minimal discomfort",
+        "Mood": "Confident and alert",
+        "Possible": "Fertile cervical mucus (egg-white consistency)",
+        "Explanation_short": "Your follicular phase is rocking with no bleeding, and you are feeling vibrant with minimal discomfort. You are confident and alert as estrogen peaks, and egg-white cervical mucus signals your fertile window is here. This is your moment to track ovulation if you are planning, or just enjoy your high energy. Fuel up with healthy meals, stay hydrated, and dive into active tasks. Your body is ready for ovulation, so make the most of this dynamic day!",
+        "Tip": "You might track ovulation signs for planning, you should note mucus changes for accuracy."
+    },
+    "16": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "High stamina, feeling vibrant",
+        "Mood": "Happy and outgoing",
+        "Possible": "Fertile cervical mucus (egg-white consistency)",
+        "Explanation_short": "No bleeding today, your follicular phase has you buzzing with high stamina and a vibrant vibe. You are happy and outgoing as estrogen peaks, with egg-white cervical mucus showing peak fertility. This is your time to track ovulation with kits if needed, or just soak up the joy. Eat nutrient-rich foods to fuel your energy, and stay hydrated to keep shining. Your body iis prepping for ovulation, so enjoy this lively day!",
+        "Tip": "You should track ovulation if needed, you might use kits for precise timing."
+    },
+    "17": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "Peak energy, minimal discomfort",
+        "Mood": "Confident and sociable",
+        "Possible": "Pre-ovulation twinges",
+        "Explanation_short": "Your follicular phase is at its peak with no bleeding, and your energy iis through the roof with minimal discomfort. You are confident and sociable, fueled by estrogen, and pre-ovulation twinges might hint at ovulation is approach. This is your day to shine in social settings or stay active. Drink lots of water to support fertile mucus, and eat well to keep your vibe high. Your body is in the fertile zone, so enjoy it!",
+        "Tip": "You should stay hydrated for mucus production, you might feel optimal with fluids."
+    },
+    "18": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "Clear skin, high energy",
+        "Mood": "Optimistic and focused",
+        "Possible": "Increased libido",
+        "Explanation_short": "No bleeding today, your follicular phase has your skin glowing and energy soaring. You are optimistic and focused, with estrogen boosting your mood, and a spike in libido might add some spark. This is your time to crush workouts or tackle big tasks. Fuel up with nutrient-dense foods, and stay hydrated to keep that vibrant feeling. Your body nearing ovulation, so lean into this productive, positive day with confidence and enthusiasm.",
+        "Tip": "You might leverage energy for workouts, you should feel great with activity."
+    },
+    "19": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "Feeling strong, no major symptoms",
+        "Mood": "Upbeat and alert",
+        "Possible": "Mild pelvic sensations",
+        "Explanation_short": "Your follicular phase is in high gear with no bleeding, and you are feeling strong with no major symptoms. You are upbeat and alert as estrogen peaks, though mild pelvic sensations might hint at ovulation. This is your day to stay active or try mindfulness to keep balanced. Eat well and drink water to fuel your energy. Your body is in the fertile window, so embrace this vibrant time with confidence and focus.",
+        "Tip": "You might practice mindfulness for balance, you should stay calm as ovulation nears."
+    },
+    "20": {
+        "Stage": "Follicular phase (Rebuilding)",
+        "Flow": "No bleeding",
+        "Symptoms": "High stamina, glowing skin",
+        "Mood": "Excited and engaged",
+        "Possible": "Fertile window opening",
+        "Explanation_short": "No bleeding today, your follicular phase has you buzzing with high stamina and glowing skin. You are excited and engaged as estrogen peaks, with the fertile window opening for ovulation. This is your moment to track ovulation with kits if you  are planning, or just enjoy your energy. Load up on healthy foods, stay hydrated, and dive into tasks or fun plans. Your body is ready for ovulation, so make this vibrant day count!",
+        "Tip": "You should use ovulation kits if tracking, you might feel confident with preparation."
+    },
+    "21": {
+        "Stage": "Ovulation phase",
+        "Flow": "No bleeding",
+        "Symptoms": "Mild pelvic pain (mittelschmerz), increased libido",
+        "Mood": "Confident and attractive (estrogen peak)",
+        "Possible": "Light spotting for some",
+        "Explanation_short": "Your ovulation phase is here with no bleeding, and you might feel mild pelvic pain or a surge in libido. You are confident and feeling attractive, thanks to peak estrogen, though light spotting could happen. This is your peak fertility day, perfect for socializing or romantic plans. Stay active to harness your energy, and drink water to keep feeling great. Your body is at its fertile peak, so enjoy this vibrant, confident moment!",
+        "Tip": "You should stay active to harness energy, you might enjoy social plans today."
+    },
+    "22": {
+        "Stage": "Ovulation phase",
+        "Flow": "No bleeding",
+        "Symptoms": "Lingering pelvic twinges, high energy",
+        "Mood": "Outgoing and optimistic",
+        "Possible": "Slight breast tenderness",
+        "Explanation_short": "No bleeding today—your ovulation phase keeps your energy high, though lingering pelvic twinges might linger, and slight breast tenderness could pop up. You are outgoing and optimistic, fueled by estrogen, making this a great day for social plans or active hobbies. Stay hydrated to avoid overdoing it, and eat well to keep your vibe up. Your body is transitioning from ovulation, so soak up this positive, lively moment before the luteal phase kicks in.",
+        "Tip": "You should maintain hydration, you might avoid overexertion to stay balanced."
+    },
+    "23": {
+        "Stage": "Luteal phase",
+        "Flow": "No bleeding",
+        "Symptoms": "Mild bloating, breast tenderness",
+        "Mood": "Stable but introspective",
+        "Possible": "Progesterone rise causing warmth",
+        "Explanation_short": "Your luteal phase begins with no bleeding, but you might notice mild bloating and tender breasts. Your mood is stable yet introspective, as progesterone rises, possibly making you feel warmer. This is your body settling in, prepping for menstruation or pregnancy. Load up on fiber-rich foods to ease digestion, and stay hydrated to feel comfy. You are in a reflective phase, so take it easy and pamper yourself as your cycle shifts gears.",
+        "Tip": "You should eat fiber-rich foods, you might feel better with improved digestion."
+    },
+    "24": {
+        "Stage": "Luteal phase",
+        "Flow": "No bleeding",
+        "Symptoms": "Bloating, possible acne",
+        "Mood": "Calm but stress-sensitive",
+        "Possible": "Increased appetite",
+        "Explanation_short": "No bleeding today, your luteal phase brings some bloating and maybe acne, with your mood calm but sensitive to stress. You might feel hungrier as progesterone takes over. This is your body prepping for menstruation, so try yoga to keep stress low and sip water to help your skin. You are in a quieter phase, so listen to your needs and fuel up with healthy snacks to stay balanced and comfy.",
+        "Tip": "You might try yoga to reduce stress, you should feel calmer with relaxation."
+    },
+    "25": {
+        "Stage": "Luteal phase",
+        "Flow": "No bleeding",
+        "Symptoms": "Breast tenderness, mild fatigue",
+        "Mood": "Slightly moody or anxious",
+        "Possible": "Skin oiliness",
+        "Explanation_short": "Your luteal phase continues with no bleeding, but tender breasts and mild fatigue might slow you down. You are feeling a bit moody or anxious, and your skin could be oilier. This is your body signaling PMS as menstruation nears. Stick to a steady sleep schedule to stabilize your mood, and drink water to keep your skin in check. You are navigating a sensitive phase, so be kind to yourself with rest and self-care.",
+        "Tip": "You should keep a consistent sleep schedule, you might notice stabler moods."
+    },
+    "26": {
+        "Stage": "Luteal phase",
+        "Flow": "No bleeding",
+        "Symptoms": "Bloating, possible constipation",
+        "Mood": "Introspective, less social",
+        "Possible": "Cravings for sweets",
+        "Explanation_short": "No bleeding today, your luteal phase has you feeling bloated, maybe constipated, and craving sweets. You are introspective and less social as progesterone peaks. This is your body prepping for menstruation, so choose fruits to satisfy those cravings and eat fiber to ease digestion. Stay hydrated to feel lighter, and take time for yourself. You are in a quieter phase, so honor your need for calm as PMS starts to build up.",
+        "Tip": "You should choose fruit for cravings, you might satisfy urges healthily."
+    },
+    "27": {
+        "Stage": "Luteal phase",
+        "Flow": "No bleeding",
+        "Symptoms": "Mild lower back pain, fatigue",
+        "Mood": "Irritability creeping in",
+        "Possible": "Water retention",
+        "Explanation_short": "Your luteal phase continues with no bleeding, but mild lower back pain and fatigue might drag you down. Irritability is creeping in, and water retention could make you feel puffy. This is your body signaling menstruation is approach, so cut back on salt to ease bloating. Rest up and stay hydrated to feel better. You are in a sensitive phase, so give yourself grace and cozy up as your cycle nears its next chapter.",
+        "Tip": "You should reduce salt to ease bloating, you might feel lighter with less sodium."
+    },
+    "28": {
+        "Stage": "Luteal phase",
+        "Flow": "No bleeding",
+        "Symptoms": "Breast soreness, bloating",
+        "Mood": "Mood swings possible",
+        "Possible": "Pre-PMS symptoms",
+        "Explanation_short": "No bleeding today, your luteal phase brings sore breasts and bloating, with mood swings possibly making things feel unsteady. Pre-PMS symptoms are kicking in as menstruation looms. This is your body prepping for the cycle restart, so try light exercise to boost your mood. Stay hydrated to ease discomfort, and pamper yourself a bit. You are navigating a tricky phase, so lean into self-care to stay balanced and ready for what is next.",
+        "Tip": "You might try light exercise for endorphins, you should feel uplifted with movement."
+    },
+    "29": {
+        "Stage": "Luteal phase",
+        "Flow": "No bleeding",
+        "Symptoms": "Fatigue, mild cramps",
+        "Mood": "Sensitive or frustrated",
+        "Possible": "Headaches for some",
+        "Explanation_short": "Your luteal phase continues with no bleeding, but fatigue and mild cramps might make you feel off. You are sensitive or frustrated, and headaches could pop up as PMS builds. This is your body nearing menstruation, so try meditation to calm your mind. Stay hydrated to ease tension, and rest when you can. You are in a tender phase, so be gentle with yourself and focus on self-care to navigate this emotional time.",
+        "Tip": "You should meditate to ease tension, you might find calm with relaxation."
+    },
+    "30": {
+        "Stage": "Luteal phase",
+        "Flow": "No bleeding",
+        "Symptoms": "Bloating, tender breasts",
+        "Mood": "Irritable, possible anxiety",
+        "Possible": "PMS intensifying",
+        "Explanation_short": "No bleeding today, your luteal phase has bloating and tender breasts, with PMS ramping up. You might feel irritable or anxious as hormones shift, signaling menstruation is close. This is your body in the final stretch, so try magnesium to soothe tension and sip water to stay comfy. You are navigating intense PMS, so prioritize self-care and cozy moments. Your cycle is almost restarting, so give yourself space to process and recharge.",
+        "Tip": "You might take magnesium for PMS relief, you should feel soothed with supplements."
+    },
+    "31": {
+        "Stage": "Luteal phase",
+        "Flow": "No bleeding",
+        "Symptoms": "Cramps starting, fatigue",
+        "Mood": "Low energy, moody",
+        "Possible": "Sleep issues",
+        "Explanation_short": "Your luteal phase continues with no bleeding, but cramps are starting, and fatigue is weighing you down. You are low in energy and moody, with sleep issues possibly making things tougher. This is your body signaling menstruation is near, so skip caffeine to rest better. Stay hydrated and take it easy to manage discomfort. You are in the cycle final days, so pamper yourself with rest and calm to prepare for the menstrual phase ahead.",
+        "Tip": "You should limit caffeine for better sleep, you might rest easier with less."
+    },
+    "32": {
+        "Stage": "Luteal phase",
+        "Flow": "No bleeding",
+        "Symptoms": "Stronger cramps, bloating",
+        "Mood": "Irritable or sad",
+        "Possible": "Spotting for some",
+        "Explanation_short": "No bleeding yet, but your luteal phase brings stronger cramps and bloating, with irritability or sadness creeping in. Spotting might start for some as menstruation nears. This is your body in the cycle final stretch, so grab a heating pad to ease cramps and stay hydrated to feel lighter. You are navigating intense PMS, so be kind to yourself and rest up to prepare for the menstrual phase arrival.",
+        "Tip": "You should use a heating pad for comfort, you might feel relief with warmth."
+    },
+    "33": {
+        "Stage": "Luteal phase",
+        "Flow": "No bleeding or spotting",
+        "Symptoms": "Pre-menstrual cramps, fatigue",
+        "Mood": "Anxious or withdrawn",
+        "Possible": "PMS at peak",
+        "Explanation_short": "Your luteal phase has no bleeding or spotting, but pre menstrual cramps and fatigue are hitting hard. You might feel anxious or withdrawn as PMS peaks, signaling menstruation approach. This is your body in the cycle final moments, so journal to sort through emotions and sip water to stay comfy. You are navigating a tough phase, so prioritize rest and self-care to ease into the menstrual phase with clarity and calm.",
+        "Tip": "You might journal to process emotions, you should feel clearer with reflection."
+    },
+    "34": {
+        "Stage": "Luteal phase",
+        "Flow": "No bleeding or spotting",
+        "Symptoms": "Mild cramps, breast tenderness",
+        "Mood": "Low, preparing for menstruation",
+        "Possible": "Early flow possible",
+        "Explanation_short": "No bleeding or spotting yet, but mild cramps and tender breasts signal menstruation is close in your luteal phase. Your mood is low as you prep for your period, with early flow possible. This is your body wrapping up the cycle, so keep menstrual supplies handy and stay hydrated to feel comfy. You are in the final stretch, so rest and pamper yourself to ease into the next phase with calm and readiness.",
+        "Tip": "You should prepare menstrual supplies, you might feel ready with essentials."
+    },
+    "35": {
+        "Stage": "Luteal phase",
+        "Flow": "No bleeding or spotting",
+        "Symptoms": "Bloating, pre-menstrual cramps",
+        "Mood": "Moody or withdrawn",
+        "Possible": "Menstruation imminent",
+        "Explanation_short": "Your luteal phase has no bleeding yet, but bloating and pre menstrual cramps mean your period is almost here. You are feeling moody or withdrawn as PMS peaks. This is your body final prep for menstruation, so rest up and avoid stress to feel better. Stay hydrated and try cozy self-care to ease discomfort. You are at the cycles end, so give yourself space to recharge and get ready for your next phase.",
+        "Tip": "You should rest and avoid stress, you might feel better with light self-care."
+    }
+}

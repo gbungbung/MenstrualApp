@@ -1,0 +1,6 @@
+buildozer              ==1.5.0
+certifi                ==2019.11.28
+Kivy                   ==2.2.1
+kivymd                 ==1.1.1
+Pillow                 ==7.0.0
+requests               ==2.22.0
